@@ -1,0 +1,15 @@
+<!--pages/qrCode/qrcode.wxml-->
+<view>
+  <text style="display: flex;justify-content: center;">
+    请输入想生成的二维码链接
+  </text>
+  <input class="weui-input" auto-focus bindinput="bindKeyInput"/>
+  <button class="marginT20" bindtap="bindToQrCode">生成二维码 </button>
+
+  <div style="display: flex;justify-content: center;">
+    <image style="width:150px;height:150px;" src="{{ qrcodeURL }}" ></image>
+    <canvas type="2d" style="width: 75px; height: 75px; position: absolute; left: -200px;" id="myQrcode"></canvas>
+  </div>
+
+  <button class="marginT20" bindtap="savePicture">下载图片 </button>
+</view>

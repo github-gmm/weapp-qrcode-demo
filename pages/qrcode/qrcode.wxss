@@ -1,0 +1,9 @@
+/* pages/qrCode/qrcode.wxss */
+.weui-input {
+  background-color: #eeeeee;
+  margin: 20px;
+}
+
+.marginT20 {
+  margin-top: 20px;
+}

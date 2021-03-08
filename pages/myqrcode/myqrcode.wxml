@@ -1,0 +1,13 @@
+<!--pages/myqrcode/myqrcode.wxml-->
+<view>
+  <canvas canvas-id="canvas"
+    style="width: {{width}}px; height: {{height}}px;">
+  </canvas>
+
+  <!-- 二维码画布 -->
+  <canvas 
+    type="2d" 
+    style="width: 75px; height: 75px; position: absolute; left: -200px;" 
+    id="myQrcode">
+  </canvas>
+</view>
